@@ -1,0 +1,12 @@
+<div class="drivers">
+  <app-header></app-header>
+  <input type="text" [(ngModel)]="query">
+  
+  <div class="drivers__wrapper">
+    <div class="drivers__wrapper--container">
+      <!-- <div> -->
+        <app-driver *ngFor="let driver of drivers | search:'name,driverType,driverRank,phone,email':query" [driver]="driver"></app-driver>
+      <!-- </div> -->
+    </div>
+  </div>
+</div>

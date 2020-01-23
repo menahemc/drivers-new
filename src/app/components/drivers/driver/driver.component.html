@@ -1,0 +1,18 @@
+<div class="driver">
+  <div class="driver__image-container">
+    <img class="driver__image-container--img" [src]="getImageSrc()" alt="">
+  </div>
+  <div class="driver__details-container">
+    <div class="driver__details-container--full-name">{{driver.name}}</div>
+    <div class="driver__details-container--rank">{{driver.driverRank}}</div>
+    <div>
+      <span>Phone Number:</span>
+      <span>{{driver.phone}}</span>
+    </div>
+    <div>
+      <span>Email:</span>
+      <span>{{driver.email}}</span>
+    </div>
+  </div>
+  <img [src]="'../../../../assets/svg/'+ driver.driverType.trim().toLocaleLowerCase()+'.svg'" alt="">
+</div>

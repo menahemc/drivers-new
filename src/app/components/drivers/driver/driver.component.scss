@@ -1,0 +1,19 @@
+.driver{
+    flex: 0 0 20%;
+    border: 1px solid;
+    margin: 5px;
+    background-color: white;
+    &__image-container{
+
+        &--img{
+            height: 150px;
+            width: 120px;
+        }
+    }
+
+    &__details-container{
+
+    }
+}
+
+
