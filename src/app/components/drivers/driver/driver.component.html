@@ -13,6 +13,7 @@
       <span>Email:</span>
       <span>{{driver.email}}</span>
     </div>
+    <img class="driver__details-container--type-icon" [src]="'../../../../assets/svg/'+ driver.driverType.trim().toLocaleLowerCase()+'.svg'" alt="">
+
   </div>
-  <img [src]="'../../../../assets/svg/'+ driver.driverType.trim().toLocaleLowerCase()+'.svg'" alt="">
 </div>
