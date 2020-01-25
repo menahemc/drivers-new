@@ -1,6 +1,6 @@
 <div class="driver">
   <div class="driver__image-container">
-    <img class="driver__image-container--img" [src]="getImageSrc()" alt="">
+    <img #img class="driver__image-container--img" [src]="getImageSrc()" alt="">
   </div>
   <div class="driver__details-container">
     <div class="driver__details-container--full-name">{{driver.name}}</div>
@@ -13,7 +13,8 @@
       <span>Email:</span>
       <span>{{driver.email}}</span>
     </div>
-    <img class="driver__details-container--type-icon" [src]="'../../../../assets/svg/'+ driver.driverType.trim().toLocaleLowerCase()+'.svg'" alt="">
+    <img class="driver__details-container--type-icon"
+      [src]="'../../../../assets/svg/'+ driver.driverType.trim().toLocaleLowerCase()+'.svg'" alt="">
 
   </div>
 </div>

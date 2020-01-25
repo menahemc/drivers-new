@@ -45,4 +45,44 @@
     }
 }
 
+@media (max-width:600px){
+    .driver{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2%;
+        &__image-container{
+            flex: 0 0 30%;
+            // width:96%;
+            &--img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        &__details-container{
+            flex: 0 0 68%;
+            line-height: 1.5;
+            // padding-top: 20px;
+            background-color: white;
+            position: relative;;
+            // bottom:-25%;
+            //  width:130px;
+            // height:auto;
+            // transition: bottom 0.8s ease;
+            &:hover{
+                // bottom:0;
+                // transition: bottom 0.8s ease;
+            }
+    
+            &--type-icon{
+                height: 30px;
+                position: absolute;
+                top: -15px;
+                left: 20px;
+            }
+        }
+    }
 
+}

@@ -1,21 +1,19 @@
-
 <div class="header">
 
   <div class="header__title">Contact List</div>
   <div class="header__search-container">
-    <input type="text" [(ngModel)]="query">
+    <input class="header__search-container--input" type="text" [(ngModel)]="query">
 
   </div>
 
 </div>
 
 <div class="drivers">
-  
+
   <div class="drivers__wrapper">
     <div class="drivers__wrapper--container">
-      <!-- <div> -->
-        <app-driver *ngFor="let driver of drivers | search:'name,driverType,driverRank,phone,email':query" [driver]="driver"></app-driver>
-      <!-- </div> -->
+      <app-driver *ngFor="let driver of drivers | search:'name,driverType,driverRank,phone,email':query"
+        [driver]="driver"></app-driver>
     </div>
   </div>
 </div>
