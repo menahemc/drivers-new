@@ -1,3 +1,11 @@
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 5%;
+    background-color: #32cff2;
+    color: white;
+}
 .drivers{
     background-color:  #f8f8f8;
 
@@ -16,7 +24,14 @@
     }
     
 }
-app-driver{
-    width: 25%;
-    word-break: break-word;
+
+@media (min-width:700px) and (max-width:1100px){
+    .drivers{
+        &__wrapper{
+            &--container{
+                width: 80%;
+            
+            }
+        }
+    }
 }

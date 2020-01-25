@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { DriversComponent } from './components/drivers/drivers.component';
 import { DriverComponent } from './components/drivers/driver/driver.component';
-import { HeaderComponent } from './components/drivers/header/header.component';
 import { SearchPipe } from './pipes/search.pipe';
 import { FormsModule } from '@angular/forms';
 
@@ -15,7 +14,6 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     DriversComponent,
     DriverComponent,
-    HeaderComponent,
     SearchPipe
     
   ],
