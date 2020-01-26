@@ -1,10 +1,10 @@
 .driver{
 
     position:relative;
-    width: 150px;
+    width: 155px;
     height: 200px;
     overflow:hidden;
-
+    border-radius: 2px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +12,6 @@
     padding-top: 10px;
 
     // flex: 0 0 20%;
-    border: 1px solid;
     margin: 5px;
     background-color: white;
     &__image-container{
@@ -20,27 +19,37 @@
         &--img{
             height: 140px;
             width: 130px;
+            border-radius: 2px;
         }
     }
 
     &__details-container{
+        word-break: break-all;
         padding-top: 20px;
         background-color: white;
         position:absolute;
-        bottom:-25%;
+         top: 72%;
          width:130px;
         height:auto;
-        transition: bottom 0.8s ease;
+        color: #535a60;
+        font-size: 14px;
+        line-height: 1.2;
+        // transition: bottom 0.8s ease;
         &:hover{
             bottom:0;
-            transition: bottom 0.8s ease;
+            top: auto;
+
+        }
+        &--full-name{
+            font-size: 17px;
+            font-weight: bold;
         }
 
         &--type-icon{
             height: 30px;
             position: absolute;
             top: -15px;
-            left: 20px;
+            left: 10px;
         }
     }
 }
@@ -80,7 +89,7 @@
                 height: 30px;
                 position: absolute;
                 top: -15px;
-                left: 20px;
+                left: 10px;
             }
         }
     }

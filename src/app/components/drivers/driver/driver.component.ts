@@ -11,11 +11,7 @@ import { Driver } from '../../../model/driver';
 export class DriverComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
   onResize(event) {
-    if (event.target.innerWidth <= 600) {
         this.img.nativeElement.style.height=this.img.nativeElement.width*1.2+'px';
-
-
-    }
   }
 
 
@@ -25,7 +21,8 @@ export class DriverComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // this.driver.profile_image
+    this.img.nativeElement.style.height=this.img.nativeElement.width*1.2+'px';
+
   }
   getImageSrc() {
     return this.driver.profile_image ? this.driver.profile_image : "https://i.imgur.com/S2IRHcz.jpg";

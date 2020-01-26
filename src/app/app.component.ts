@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CardService } from './services/card.service';
+import { DriverService } from './services/driver.service';
 import { Observable } from 'rxjs';
 import { Driver } from './model/driver';
 
@@ -12,8 +12,8 @@ export class AppComponent implements OnInit {
   title = 'viaTask';
   drivers$:Observable<Array<Driver>>;
 
-  constructor(private cardService:CardService){
-    this.drivers$=this.cardService.getDataFromServer();
+  constructor(private driverService:DriverService){
+    this.drivers$=this.driverService.getDataFromServer();
   }
 
   ngOnInit(){
