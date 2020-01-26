@@ -17,6 +17,5 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(){
-    this.drivers$.subscribe(x=>console.log(x));
   }
 }

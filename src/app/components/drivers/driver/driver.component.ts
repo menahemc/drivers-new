@@ -14,10 +14,10 @@ export class DriverComponent implements OnInit {
         this.img.nativeElement.style.height=this.img.nativeElement.width*1.2+'px';
   }
 
-
   @Input()
   driver: Driver;
   @ViewChild("img") img: ElementRef;
+  
   constructor() { }
 
   ngOnInit() {
@@ -26,10 +26,6 @@ export class DriverComponent implements OnInit {
   }
   getImageSrc() {
     return this.driver.profile_image ? this.driver.profile_image : "https://i.imgur.com/S2IRHcz.jpg";
-  }
-
-  initImgHeight(width:number):number{
-    return width*1.2;
   }
 
 }

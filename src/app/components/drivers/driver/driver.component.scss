@@ -10,8 +10,7 @@
     align-items: center;
     justify-content: start;
     padding-top: 10px;
-
-    // flex: 0 0 20%;
+    min-height: 130px;
     margin: 5px;
     background-color: white;
     &__image-container{
@@ -28,8 +27,8 @@
         padding-top: 20px;
         background-color: white;
         position:absolute;
-         top: 72%;
-         width:130px;
+        top: 72%;
+        width:130px;
         height:auto;
         color: #535a60;
         font-size: 14px;
@@ -38,8 +37,8 @@
         &:hover{
             bottom:0;
             top: auto;
-
         }
+
         &--full-name{
             font-size: 17px;
             font-weight: bold;
@@ -73,17 +72,8 @@
         &__details-container{
             flex: 0 0 68%;
             line-height: 1.5;
-            // padding-top: 20px;
             background-color: white;
-            position: relative;;
-            // bottom:-25%;
-            //  width:130px;
-            // height:auto;
-            // transition: bottom 0.8s ease;
-            &:hover{
-                // bottom:0;
-                // transition: bottom 0.8s ease;
-            }
+            position: relative;
     
             &--type-icon{
                 height: 30px;

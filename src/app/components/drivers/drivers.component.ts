@@ -15,13 +15,6 @@ export class DriversComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.drivers);
   }
-  ngOnChanges(){
-    console.log(this.drivers);
-  }
-  onSearch(query){
-    this.query=query;
-  }
-
+  
 }
